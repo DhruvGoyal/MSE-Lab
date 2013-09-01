@@ -1,6 +1,6 @@
 #import<Foundation/Foundation.h>
 
-@interface Calculator:NSObject //atributes to act as operands for calculator operations
+@interface Calculator:NSObject //attributes to act as operands for calculator operations
 {
 	double num1;
 	double num2;
