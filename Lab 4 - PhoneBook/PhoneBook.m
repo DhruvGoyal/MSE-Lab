@@ -55,7 +55,7 @@
 		if([obj.name caseInsensitiveCompare:nm] == NSOrderedSame)
 		{
 			flag = 1;
-			NSLog(@"The entry for %@ exists.Details are:\n", nm);  
+			NSLog(@"The entry for %@ exists. Details are:\n", nm);  
 			[obj print];
 		}
 	}
