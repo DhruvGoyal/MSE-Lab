@@ -2,7 +2,7 @@
 
 @interface PhoneBook: NSObject
 {
-	NSMutableArray *arr;//Muteable so that add and delete can be performed
+	NSMutableArray *arr; //Muteable array is used so that adding and deletion can be performed
 }
 
 
