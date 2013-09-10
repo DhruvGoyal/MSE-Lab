@@ -6,23 +6,23 @@ int main(int argc, const char* argv[])
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc]init];
    
-   //Object initialization
+   	//Object initialization
 	Phonecard *card1 = [[Phonecard alloc] init];
 	Phonecard *card2 = [[Phonecard alloc] init];
 	Phonecard *card3 = [[Phonecard alloc] init];
 
-	PhoneBook *book = [[PhoneBook alloc]init];//for Phonecardbook
+	PhoneBook *book = [[PhoneBook alloc]init]; //for Phonecardbook
 	[book initialization];
    
    char str_name[50],str_email[50];
    int str_num;
    
     //Accepting user input
-   printf("FIRST ENTRY--Enter the name: ");
+   printf("Enter the first name: ");
    scanf("%s",str_name);
-   printf("FIRST ENTRY--Enter the email ID: ");
+   printf("Enter the first email ID: ");
    scanf("%s",str_email);
-   printf("FIRST ENTRY--Enter the number:(9 digits only) ");
+   printf("Enter first number:(9 digits only) ");
    scanf("%d",&str_num);
    
    NSString *name1 = [NSString stringWithUTF8String:str_name];
@@ -35,11 +35,11 @@ int main(int argc, const char* argv[])
    [book addEntry:card1]; //Adding Entry to the phonebook object
 
    
-   printf("SECOND ENTRY--Enter the name: ");
+   printf("Enter the second name: ");
    scanf("%s",str_name);
-   printf("SECOND ENTRY--Enter the email ID: ");
+   printf("Enter the second email ID: ");
    scanf("%s",str_email);
-   printf("SECOND ENTRY--Enter the number:(9 digits only) ");
+   printf("Enter second number:(9 digits only) ");
    scanf("%d",&str_num);
    
    NSString *name2 = [NSString stringWithUTF8String:str_name];
@@ -50,11 +50,11 @@ int main(int argc, const char* argv[])
 	[card2 setNum:str_num];
    [book addEntry:card2];//Adding Entry to the phonebook object
 
-	printf("THIRD ENTRY--Enter the name: ");
+	printf("Enter the third name: ");
    scanf("%s",str_name);
-   printf("THIRD ENTRY--Enter the email ID: ");
+   printf("Enter the third email ID: ");
    scanf("%s",str_email);
-   printf("THIRD ENTRY--Enter the number:(9 digits only) ");
+   printf("Enter third number:(9 digits only) ");
    scanf("%d",&str_num);
    
    NSString *name3 = [NSString stringWithUTF8String:str_name];
@@ -73,7 +73,7 @@ int main(int argc, const char* argv[])
 
 	[book countAll]; //count total number of entries
 
-	[book searchWithName:@"Akshay"]; //Search for entry using NAME
+	[book searchWithName:@"Dhruv"]; //Search for entry using NAME
 
 	[pool release];
 
