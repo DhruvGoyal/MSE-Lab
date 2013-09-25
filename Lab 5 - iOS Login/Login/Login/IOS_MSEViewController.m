@@ -70,7 +70,7 @@
 
 - (IBAction)loginButtonAction:(id)sender {
     
-    if([userName.text isEqualToString:@"a4"] && [password.text isEqualToString:@"a4"])
+    if([userName.text isEqualToString:@"abc"] && [password.text isEqualToString:@"abc"])
     {
         NSLog(@"check");
          
